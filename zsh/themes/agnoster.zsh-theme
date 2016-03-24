@@ -134,7 +134,9 @@ prompt_git_ahead_behind() {
       behind="${ICON_BEHIND}${count}"
     fi
 
-    if [[ -n $behind || -n $ahead ]]; then
+    if [[ -n $behind && -n $ahead ]]; then
+      prompt_segment red black "${ahead}${behind}"
+    elif [[ -n $behind || -n $ahead ]]; then
       prompt_segment cyan black "${ahead}${behind}"
     fi
   fi
