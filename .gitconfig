@@ -2,5 +2,53 @@
 [push]
   default = simple
 
+[color]
+  # Un peu de couleurs :)
+  ui = true
+
+[core]
+  # Permet d'utiliser Atom pour les différents messages
+  # editor = atom --wait
+
+  # On ne prend pas en compte les espaces de fins de lignes ou de fichiers comme une modif
+  whitespace = -trailing-space
+
+[status]
+  # Fourni l'état des submodules dans git status
+  submoduleSummary = true
+
+[rerere]
+  # Active la REutilisation des REsolutions enREgistrées (Reuse recorded resolution)
+  enabled = true
+
+  # Ces résolutions sont automatiquement ajoutées à l'index
+  autoupdate = true
+
+[diff]
+  # Utilisation (lors que possible) de  "c" (commit), "i" (index) et "w" (working dir) à la place de "a" et "b"
+  # dans les diff
+  mnemonicPrefix = true
+
+  # Affiche les fichiers renommés comme tel
+  renames = true
+
+  # --word-diff marche comme --word-diff-regex=.
+  wordRegex = .
+
+[grep]
+  # Active le mode étendu pour les regex (dans lequel "{}", "()", "+"... sont compris)
+  extendedRegexp = true
+
+[log]
+  # Affiche les hash en version courte par défaut
+  abbrevCommit = true
+
+[mergetool]
+  # Evite l'ajout de fichier temporaire ou de backup à la c** (les ".rej" de SourceTree par exemple)
+  keepBackup = false
+  keepTemporaries = false
+
 [alias]
   amend = commit --amend
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+  dw = diff --word-diff
