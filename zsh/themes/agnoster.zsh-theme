@@ -104,12 +104,12 @@ prompt_git() {
     branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     upstream=$(git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null)
 
-    count=$(git rev-list --left-right ${branch}...${upstream} 2>/dev/null | grep '^<' | wc -l)
+    count=$(git rev-list --left-right ${branch}...${upstream} 2>/dev/null | grep '^<' | wc -l | tr -d '[[:space:]]')
     if [[ count -gt 0 ]]; then
       ahead=" ${ICON_AHEAD}${count}"
     fi
 
-    count=$(git rev-list --left-right ${branch}...${upstream} 2>/dev/null | grep '^>' | wc -l)
+    count=$(git rev-list --left-right ${branch}...${upstream} 2>/dev/null | grep '^>' | wc -l | tr -d '[[:space:]]')
     if [[ count -gt 0 ]]; then
       behind=" ${ICON_BEHIND}${count}"
     fi
