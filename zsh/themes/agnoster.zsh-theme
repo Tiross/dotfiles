@@ -81,7 +81,7 @@ prompt_context() {
 
 # Git: branch/detached head, dirty status
 prompt_git() {
-  local ref dirty mode repo_path ahead behind branch upstream count
+  local ref dirty mode repo_path
   repo_path=$(git rev-parse --git-dir 2>/dev/null)
 
   if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
@@ -101,19 +101,6 @@ prompt_git() {
       mode=" >R>"
     fi
 
-    branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-    upstream=$(git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null)
-
-    count=$(git rev-list --left-right ${branch}...${upstream} 2>/dev/null | grep '^<' | wc -l | tr -d '[[:space:]]')
-    if [[ count -gt 0 ]]; then
-      ahead=" ${ICON_AHEAD}${count}"
-    fi
-
-    count=$(git rev-list --left-right ${branch}...${upstream} 2>/dev/null | grep '^>' | wc -l | tr -d '[[:space:]]')
-    if [[ count -gt 0 ]]; then
-      behind=" ${ICON_BEHIND}${count}"
-    fi
-
     setopt promptsubst
     autoload -Uz vcs_info
 
@@ -125,7 +112,31 @@ prompt_git() {
     zstyle ':vcs_info:*' formats ' %u%c'
     zstyle ':vcs_info:*' actionformats ' %u%c'
     vcs_info
-    echo -n "${ref/refs\/heads\// }${vcs_info_msg_0_%% }${mode}${ahead}${behind}"
+    echo -n "${ref/refs\/heads\// }${vcs_info_msg_0_%% }${mode}"
+  fi
+}
+
+# Git: ahead/behind state
+prompt_git_ahead_behind() {
+  local ahead behind branch upstream count
+
+  if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
+    branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    upstream=$(git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null)
+
+    count=$(git rev-list --left-right ${branch}...${upstream} 2>/dev/null | grep '^<' | wc -l | tr -d '[[:space:]]')
+    if [[ count -gt 0 ]]; then
+      ahead="${count}${ICON_AHEAD}"
+    fi
+
+    count=$(git rev-list --left-right ${branch}...${upstream} 2>/dev/null | grep '^>' | wc -l | tr -d '[[:space:]]')
+    if [[ count -gt 0 ]]; then
+      behind="${ICON_BEHIND}${count}"
+    fi
+
+    if [[ -n $behind || -n $ahead ]]; then
+      prompt_segment cyan black "${ahead}${behind}"
+    fi
   fi
 }
 
@@ -216,6 +227,7 @@ build_prompt() {
   prompt_context
   prompt_dir
   prompt_git
+  prompt_git_ahead_behind
 #  prompt_hg
   prompt_root
   prompt_end
