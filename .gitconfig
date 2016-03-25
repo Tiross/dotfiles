@@ -1,4 +1,8 @@
 
+# Pour rappel, il est possible d'inclure une configuration git dans une autre
+#[include]
+#  path = /path/to/file
+
 [push]
   default = simple
 
