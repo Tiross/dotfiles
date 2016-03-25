@@ -1,0 +1,77 @@
+[
+  {
+    type: "button"
+    callback: "tree-view:add-file"
+    tooltip: "New file"
+    iconset: "ion"
+    icon: "document"
+  }
+  {
+    type: "button"
+    callback: "tree-view:add-folder"
+    tooltip: "New folder"
+    iconset: "ion"
+    icon: "folder"
+  }
+  {
+    type: "button"
+    callback: "pane:split-right"
+    tooltip: "Split screen - Horizontally"
+    iconset: "fa"
+    icon: "columns"
+  }
+  {
+    type: "button"
+    callback: "pane:split-down"
+    tooltip: "Split screen - Vertically"
+    iconset: "fa"
+    icon: "columns fa-rotate-270"
+  }
+  {
+    type: "button"
+    callback: "pane:close"
+    tooltip: "Close pane"
+    iconset: "fa"
+    icon: "times-circle-o"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    callback: "merge-conflicts:detect"
+    tooltip: "Merge Conflicts"
+    icon: "git-pull-request"
+  }
+  {
+    type: "button"
+    callback: "markdown-preview:toggle"
+    tooltip: "Preview"
+    icon: "markdown"
+    disable: "!markdown"
+  }
+  {
+    type: "button"
+    callback: "window:toggle-full-screen"
+    tooltip: "Toggle Fullscreen"
+    iconset: "fa"
+    icon: "arrows-alt"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    callback: "command-palette:toggle"
+    tooltip: "Command Palette..."
+    iconset: "ion"
+    icon: "navicon-round"
+  }
+  {
+    type: "button"
+    callback: "settings-view:open"
+    tooltip: "Settings"
+    iconset: "ion"
+    icon: "gear-a"
+  }
+]

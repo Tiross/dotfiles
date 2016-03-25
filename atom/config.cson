@@ -1,0 +1,34 @@
+"*":
+  core:
+    autoHideMenuBar: true
+    themes: [
+      "isotope-ui"
+      "monokai"
+    ]
+  editor:
+    autoIndentOnPaste: false
+    fontFamily: "Source Code Pro, Source Code Pro for Powerline"
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 2
+  "flex-tool-bar": {}
+  "isotope-ui":
+    backgroundGradient: true
+    fontFamily: "System Default"
+    fontWeight: "Regular"
+  "merge-conflicts": {}
+  minimap:
+    absoluteMode: true
+  "split-diff":
+    ignoreWhitespace: true
+  tabs:
+    showIcons: true
+  "tool-bar":
+    position: "Left"
+  welcome:
+    showOnStartup: false
+".html.php.text":
+  editor:
+    tabLength: 4
