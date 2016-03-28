@@ -1,3 +1,3 @@
 # Dotfiles
 
-Petit dépôt pour simplifier la mise en place des fichiers de configuration sur plusieurs machines.
+Petit dépôt pour simplifier la gestion de mes fichiers de configuration et la mise à jour sur plusieurs machines.
