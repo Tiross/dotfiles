@@ -1,0 +1,5 @@
+# Your keymap
+
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-alt-down': 'editor:add-selection-below'
+  'ctrl-alt-up': 'editor:add-selection-above'
