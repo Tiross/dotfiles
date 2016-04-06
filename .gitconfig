@@ -28,6 +28,11 @@
   # Ces résolutions sont automatiquement ajoutées à l'index
   autoupdate = true
 
+[pull]
+  # On force les `git pull --rebase=preserve` à la place `git pull`
+  #  Nota : le `preserve` permet de ne pas supprimer les commit de merge
+  rebase = preserve
+
 [diff]
   # Utilisation (lors que possible) de  "c" (commit), "i" (index) et "w" (working dir) à la place de "a" et "b"
   # dans les diff
