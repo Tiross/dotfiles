@@ -18,6 +18,10 @@
     backgroundGradient: true
     fontFamily: "System Default"
     fontWeight: "Regular"
+  linter: {}
+  "linter-eslint": {}
+  "linter-phpcs": {}
+  "linter-sass-lint": {}
   "merge-conflicts": {}
   minimap:
     absoluteMode: true
