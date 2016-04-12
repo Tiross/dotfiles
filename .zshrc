@@ -13,3 +13,8 @@ plugins=(git npm)
 
 # Retire l'historique partagé
 unsetopt share_history
+
+# Gestion des alias
+alias la="ls -lha"
+alias ll="ls -lhA"
+alias l="ls -1"
