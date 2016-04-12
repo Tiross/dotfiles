@@ -26,6 +26,9 @@
   "merge-conflicts": {}
   minimap:
     absoluteMode: true
+  pigments:
+    mergeColorDuplicates: true
+    sortPaletteColors: "by color"
   "split-diff":
     ignoreWhitespace: true
   tabs:
