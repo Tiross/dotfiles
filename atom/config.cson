@@ -1,4 +1,5 @@
 "*":
+  alignment: {}
   core:
     autoHideMenuBar: true
     themes: [
