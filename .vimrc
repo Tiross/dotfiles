@@ -10,3 +10,5 @@ set expandtab
 set autoindent
 set ignorecase
 set modeline
+set ruler
+
