@@ -18,3 +18,11 @@ unsetopt share_history
 alias la="ls -lha"
 alias ll="ls -lhA"
 alias l="ls -1"
+
+
+# Configuration pour Vagrant
+export VM_CPUS=8
+export VM_MEMORY=4096
+export VM_EXEC_CAP=100
+export VM_NFS=true
+
