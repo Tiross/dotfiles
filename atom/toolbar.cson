@@ -59,6 +59,38 @@
   }
   {
     type: "spacer"
+    show: "arduino"
+  }
+  {
+    type: "button"
+    callback: "arduino-upload:verify"
+    tooltip: "Verifies the sketches"
+    icon: "check"
+    show: "arduino"
+  }
+  {
+    type: "button"
+    callback: "arduino-upload:build"
+    tooltip: "Builds the current sketch"
+    icon: "rocket"
+    show: "arduino"
+  }
+  {
+    type: "button"
+    callback: "arduino-upload:upload"
+    tooltip: "Uploads the current sketch to a connected arduino"
+    icon: "cloud-upload"
+    show: "arduino"
+  }
+  {
+    type: "button"
+    callback: "arduino-upload:serial-monitor"
+    tooltip: "Opens the serial monitor"
+    icon: "browser"
+    show: "arduino"
+  }
+  {
+    type: "spacer"
   }
   {
     type: "button"
