@@ -17,15 +17,15 @@
     type: "button"
     callback: "pane:split-right"
     tooltip: "Split screen - Horizontally"
-    iconset: "fa"
-    icon: "columns"
+    iconset: "mdi"
+    icon: "table-column-plus-after"
   }
   {
     type: "button"
     callback: "pane:split-down"
     tooltip: "Split screen - Vertically"
-    iconset: "fa"
-    icon: "columns fa-rotate-270"
+    iconset: "mdi"
+    icon: "table-row-plus-after"
   }
   {
     type: "button"
