@@ -27,3 +27,11 @@ export VM_EXEC_CAP=100
 export VM_NFS=true
 export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 
+function notify_me {
+  LAST_EXIT_CODE=$?
+  CMD=$(fc -ln -1)
+  # No point in waiting for the command to complete
+  notifyme "$CMD" "$LAST_EXIT_CODE" &
+}
+
+export PS1='$(notify_me)'$PS1
