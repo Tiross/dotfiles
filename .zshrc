@@ -8,7 +8,7 @@ ZSH_THEME="agnoster"
 #   jira    Permet l'ouverture rapide de JIRA
 #   npm     Autocomplétion pour npm
 #   vagrant Autocomplétion pour vagrant
-plugins=(git npm)
+plugins=(git npm gulp)
 
 
 # Retire l'historique partagé
