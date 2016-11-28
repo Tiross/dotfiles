@@ -25,4 +25,5 @@ export VM_CPUS=8
 export VM_MEMORY=4096
 export VM_EXEC_CAP=100
 export VM_NFS=true
+export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 
