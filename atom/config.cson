@@ -29,6 +29,9 @@
   minimap:
     absoluteMode: true
   "one-dark-ui": {}
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   pigments:
     mergeColorDuplicates: true
     sortPaletteColors: "by color"
