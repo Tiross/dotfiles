@@ -4,7 +4,7 @@
     autoHideMenuBar: true
     telemetryConsent: "limited"
     themes: [
-      "isotope-ui"
+      "one-dark-ui"
       "monokai"
     ]
   editor:
@@ -28,6 +28,7 @@
   "merge-conflicts": {}
   minimap:
     absoluteMode: true
+  "one-dark-ui": {}
   pigments:
     mergeColorDuplicates: true
     sortPaletteColors: "by color"
