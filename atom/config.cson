@@ -14,8 +14,7 @@
     showIndentGuide: true
     showInvisibles: true
     tabLength: 2
-  "file-icons":
-    onChanges: true
+  "file-icons": {}
   "flex-tool-bar": {}
   "isotope-ui":
     backgroundGradient: true
