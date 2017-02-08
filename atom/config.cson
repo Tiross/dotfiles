@@ -2,6 +2,7 @@
   alignment: {}
   core:
     autoHideMenuBar: true
+    telemetryConsent: "limited"
     themes: [
       "isotope-ui"
       "monokai"
