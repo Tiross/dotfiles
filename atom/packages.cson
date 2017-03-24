@@ -19,6 +19,7 @@ packages: [
   "merge-conflicts"
   "minimap"
   "monokai"
+  "multi-cursor-increment"
   "package-sync"
   "pigments"
   "split-diff"
