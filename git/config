@@ -17,9 +17,15 @@
   # On ne prend pas en compte les espaces de fins de lignes ou de fichiers comme une modif
   whitespace = -trailing-space
 
+  # On utilise `diff-so-fancy` pour la pagination
+  pager = diff-so-fancy | less
+
 [status]
   # Fourni l'état des submodules dans git status
   submoduleSummary = true
+
+  # Affiche les fichiers non suivi
+  showUntrackedFiles = all
 
 [rerere]
   # Active la REutilisation des REsolutions enREgistrées (Reuse recorded resolution)
@@ -57,8 +63,14 @@
   keepBackup = false
   keepTemporaries = false
 
+[rebase]
+  # Fusionne automatiquement les commits marqués
+  autosquash = true
+
 [alias]
   amend = commit --amend
+  fixup = commit --fixup
+  squash = commit --squash
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
   dw = diff --word-diff
   dc = diff --cached
