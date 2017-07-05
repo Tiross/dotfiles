@@ -39,8 +39,8 @@
   }
   {
     type: "button"
-    callback: "merge-conflicts:detect"
-    tooltip: "Merge Conflicts"
+    callback: "github:toggle-git-tab"
+    tooltip: "Toggle git tab"
     icon: "git-pull-request"
   }
   {
