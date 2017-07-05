@@ -8,6 +8,7 @@ packages: [
   "editorconfig"
   "file-icons"
   "flex-tool-bar"
+  "goto-definition"
   "intentions"
   "isotope-ui"
   "language-applescript"
