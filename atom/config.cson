@@ -25,7 +25,8 @@
   "linter-eslint": {}
   "linter-phpcs": {}
   "linter-sass-lint": {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "merge-conflicts": {}
   minimap:
     absoluteMode: true
