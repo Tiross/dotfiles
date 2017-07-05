@@ -24,6 +24,7 @@ packages: [
   "monokai"
   "multi-cursor-increment"
   "package-sync"
+  "php-debug"
   "pigments"
   "split-diff"
   "tabs-to-spaces"
