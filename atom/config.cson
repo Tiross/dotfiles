@@ -10,6 +10,7 @@
       "atom-autocomplete-php"
       "goto-definition"
     ]
+    excludeVcsIgnoredPaths: false
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
@@ -45,19 +46,19 @@
     forceOverwrite: true
   "php-debug":
     AutoExpandLocals: true
-    PathMaps: [
-    ]
+    PathMaps: []
     currentPanelMode: "bottom"
   pigments:
     mergeColorDuplicates: true
     sortPaletteColors: "by color"
-  "split-diff":
-    ignoreWhitespace: true
+  "split-diff": {}
   tabs:
     showIcons: true
   "tool-bar":
     position: "Left"
-  "tree-view": {}
+  "tree-view":
+    alwaysOpenExisting: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
 ".html.php.text":
