@@ -1,7 +1,15 @@
 "*":
   alignment: {}
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
+    use: {}
   core:
     autoHideMenuBar: true
+    disabledPackages: [
+      "atom-autocomplete-php"
+      "goto-definition"
+    ]
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
@@ -26,6 +34,7 @@
   "linter-phpcs": {}
   "linter-sass-lint": {}
   "linter-ui-default":
+    panelHeight: 69
     showPanel: true
   "merge-conflicts": {}
   minimap:
