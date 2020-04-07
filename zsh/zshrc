@@ -18,6 +18,8 @@ unsetopt share_history
 alias la="ls -lha"
 alias ll="ls -lhA"
 alias l="ls -1"
+alias fuck='sudo $(fc -ln -1)'
+alias please='sudo $(fc -ln -1)'
 
 
 # Configuration pour Vagrant
