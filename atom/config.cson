@@ -9,6 +9,7 @@
     disabledPackages: [
       "atom-autocomplete-php"
       "goto-definition"
+      "linter"
     ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "limited"
