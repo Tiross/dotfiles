@@ -27,6 +27,22 @@
     tabLength: 2
   "file-icons": {}
   "flex-tool-bar": {}
+  "ide-python":
+    pylsPlugins:
+      autopep8: {}
+      jedi_definition:
+        follow_builtin_imports: true
+        follow_imports: true
+      pycodestyle: {}
+      pydocstyle:
+        addIgnore: [
+          "D413"
+        ]
+        enabled: true
+      pyflakes:
+        enabled: false
+      pylint:
+        enabled: true
   "isotope-ui":
     backgroundGradient: true
     fontFamily: "System Default"
@@ -34,6 +50,12 @@
   linter: {}
   "linter-eslint": {}
   "linter-phpcs": {}
+  "linter-python":
+    executablePath: "/home/jdasilva/.local/bin/pylama"
+    ignoreCodes: "E402"
+    lintTrigger: "File saved or modified"
+    withPep8: true
+    withPylint: true
   "linter-sass-lint": {}
   "linter-ui-default":
     panelHeight: 69
