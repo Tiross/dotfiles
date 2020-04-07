@@ -12,7 +12,7 @@
       "linter"
     ]
     excludeVcsIgnoredPaths: false
-    telemetryConsent: "limited"
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "monokai"
