@@ -95,3 +95,9 @@
 ".html.php.text":
   editor:
     tabLength: 4
+".python.regexp.source":
+  editor:
+    tabLength: 4
+".python.source":
+  editor:
+    tabLength: 4
