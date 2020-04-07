@@ -5,7 +5,6 @@ packages: [
   "atom-debug-ui"
   "atom-ide-ui"
   "busy-signal"
-  "code-stats-atom"
   "css-comb"
   "editorconfig"
   "file-icons"
