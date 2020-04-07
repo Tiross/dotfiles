@@ -3,15 +3,15 @@
     type: "button"
     callback: "tree-view:add-file"
     tooltip: "New file"
-    iconset: "ion"
-    icon: "document"
+    iconset: "fi"
+    icon: "page-add"
   }
   {
     type: "button"
     callback: "tree-view:add-folder"
     tooltip: "New folder"
-    iconset: "ion"
-    icon: "folder"
+    iconset: "fi"
+    icon: "folder-add"
   }
   {
     type: "button"
@@ -31,8 +31,8 @@
     type: "button"
     callback: "pane:close"
     tooltip: "Close pane"
-    iconset: "fa"
-    icon: "times-circle-o"
+    iconset: "fi"
+    icon: "trash"
   }
   {
     type: "spacer"
@@ -96,14 +96,14 @@
     type: "button"
     callback: "command-palette:toggle"
     tooltip: "Command Palette..."
-    iconset: "ion"
-    icon: "navicon-round"
+    iconset: "fi"
+    icon: "skull"
   }
   {
     type: "button"
     callback: "settings-view:open"
     tooltip: "Settings"
-    iconset: "ion"
-    icon: "gear-a"
+    iconset: "fi"
+    icon: "widget"
   }
 ]
