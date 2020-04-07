@@ -49,6 +49,7 @@
     AutoExpandLocals: true
     PathMaps: []
     currentPanelMode: "bottom"
+    showWelcome: false
   pigments:
     mergeColorDuplicates: true
     sortPaletteColors: "by color"
