@@ -49,6 +49,9 @@
     fontWeight: "Regular"
   linter: {}
   "linter-eslint": {}
+  "linter-perlcritic":
+    forceMinimumSeverity: "brutal"
+    showPolicy: true
   "linter-phpcs": {}
   "linter-python":
     executablePath: "/home/jdasilva/.local/bin/pylama"

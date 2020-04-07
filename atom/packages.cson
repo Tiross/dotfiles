@@ -21,6 +21,7 @@ packages: [
   "linter"
   "linter-csslint"
   "linter-eslint"
+  "linter-perlcritic"
   "linter-phpcs"
   "linter-python"
   "linter-sass-lint"
