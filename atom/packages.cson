@@ -16,6 +16,7 @@ packages: [
   "intentions"
   "isotope-ui"
   "language-applescript"
+  "language-docker"
   "language-htaccess"
   "language-nunjucks"
   "language-smarty"
