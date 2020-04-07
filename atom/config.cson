@@ -81,7 +81,8 @@
   pigments:
     mergeColorDuplicates: true
     sortPaletteColors: "by color"
-  "split-diff": {}
+  "split-diff":
+    ignoreWhitespace: true
   tabs:
     showIcons: true
   "tool-bar":
