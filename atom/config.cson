@@ -60,6 +60,9 @@
     withPep8: true
     withPylint: true
   "linter-sass-lint": {}
+  "linter-tslint":
+    enableSemanticRules: true
+    ignoreTypings: true
   "linter-ui-default":
     panelHeight: 69
     showPanel: true
